@@ -104,7 +104,7 @@ body {
 
 .welcome-title {
 	text-transform: uppercase;
-    font-size: 500px;
+    font-size: 400px;
     line-height: 75px;
     color: #ffffff;
     font-family: "Rokkitt Regular";
@@ -195,7 +195,6 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     z-index: 15;
-    padding-left: 5%;
 }
 
 .button {
@@ -214,7 +213,8 @@ body {
     border-radius: 250px;
     text-align: center;
 
-    margin: auto 20% auto 5%;
+    left: 10%;
+    top: 15%;
     position: relative;
 }
 
@@ -250,12 +250,11 @@ body {
 }
 
 .post_main_section:nth-child(2)>.post_main_section_text {
-	padding-left: 0;
-	width: 25%;
+	margin-left: 38%;
 }
 
 .post_main_section:nth-child(2)>.button {
-	margin: auto 5% auto 35%;
+	left: 35%;
 }
 
 .post_main_section:nth-child(3) {
@@ -309,8 +308,6 @@ body {
   	background-size: cover;
   	position: relative;
 
-  	padding-right: 50px;
-	padding-left: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 80px;
@@ -333,11 +330,11 @@ body {
 }
 
 .box>.button {
-	margin: 0;
+	left: 0;
 }
 
 .box>.button:nth-child(2) {
-	margin: 0;
+	left: 0;
 }
 
 .footer {
@@ -357,14 +354,451 @@ body {
 	padding: 0;
 }
 
-.socials_logo {
+.social_logo {
 	border-radius: 50px;
 	background-color: #ffffff;
 	height: 60px;
 }
 
-.socials_logo_icon {
+.social_logo_icon {
 	width: 40px;
 	height: 40px;
 	padding: 10px;
+}
+
+@media (min-width: 961px) and (max-width: 1200px) {
+	.welcome-title {
+    	font-size: 300px;
+    }
+
+	.menu-list {
+    	font-size: 22px;
+	}
+
+	.button_reserve {
+    	height: 50px;
+    	font-size: 22px;
+    }
+
+    .button_down {
+        width: 40px;
+    }
+
+	.post_header_text {
+		font-size: 24px;
+		line-height: 40px;
+	}
+
+	.post_main_section {
+		height: 500px;
+	}
+
+	.post_main_section_text {
+    	font-size: 22px;
+    }
+
+    .button {
+    	width: 300px;
+    	height: 300px;
+    	font-size: 22px;
+    	top: 20%;
+    }
+
+    .shape_top {
+    	width: 40px;
+    	height: 4px;
+    	margin-top: 110px;
+    }
+
+    .shape_bottom {
+    	width: 40px;
+    	height: 4px;
+    }
+
+    .post_aside_tittle {
+    	font-size: 30px;
+    	width: 70%;
+    }
+
+    .post_aside_text {
+    	font-size: 22px;
+    }
+
+    .footer {
+    	height: 140px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+	.welcome-title {
+    	font-size: 200px;
+    	line-height: 5px;
+    }
+
+	.menu-list {
+    	font-size: 18px;
+    	padding: 0;
+	}
+
+	.button_reserve {
+		width: 35%;
+    	height: 50px;
+    	font-size: 16px;
+    }
+
+	.post_header_text {
+		font-size: 22px;
+    	line-height: 32px;
+    	padding-top: 80px;
+    	margin-bottom: 25px;
+    	width: 100%;
+	}
+
+	.post_header_img {
+		margin-bottom: 80px;
+	}
+
+	.post_main_section {
+		background: none;
+		padding-right: 25px;
+    	padding-left: 25px;
+    	height: 300px;
+    	margin-bottom: 0;
+	}
+
+	.post_main_section::after {
+		background-color: #ffffff;
+	}
+
+	.post_main_section_text {
+    	font-size: 18px;
+    	line-height: 20px;
+    	color: #000000;
+    	width: 35%;
+    	padding-left: 10%;
+    }
+
+    .button {
+    	background: #000000 url(../images/menu_mob.jpg);
+    	background-repeat: no-repeat;
+  		background-position: center center;
+  		background-size: cover;
+  		position: relative;
+
+    	width: 200px;
+    	height: 200px;
+        font-size: 18px;
+    	top: 15%;
+    	left: 5%;
+    }
+
+    .button::after {
+    	content: "";
+  		background-color: #000000;
+  
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		bottom: 0;
+  		right: 0;
+  		border-radius: 250px;
+  		opacity: 0.5;
+  		
+    }
+
+    .shape_top {
+    	width: 30px;
+    	height: 3px;
+    	margin-top: 40%;
+    	z-index: 20;
+    	position: relative;
+    }
+
+    .button_name {
+    	font-size: 16px;
+    	margin-bottom: 0;
+    	margin-top: 0;
+    	z-index: 20;
+    	position: relative;
+    }
+
+    .shape_bottom {
+    	width: 30px;
+    	height: 3px;
+    	z-index: 20;
+    	position: relative;
+    }
+
+    .post_main_section:nth-child(2) {
+    	background: none;
+    }
+
+    .post_main_section:nth-child(2)>.post_main_section_text {
+    	padding: 0;
+    	margin-left: 20%;
+    }
+
+    .post_main_section:nth-child(2)>.button {
+    	background: #000000 url(../images/menu_bar_mob.jpg);
+    	background-repeat: no-repeat;
+  		background-position: center center;
+  		background-size: cover;
+  		position: relative;
+
+    	top: 15%;
+    	left: 15%;
+    }
+
+    .post_main_section:nth-child(3) {
+    	background: none;
+    }
+
+    .post_main_section:nth-child(3)>.button {
+    	background: #000000 url(../images/menu_hookah_mobile.jpg);
+    	background-repeat: no-repeat;
+  		background-position: center center;
+  		background-size: cover;
+  		position: relative;
+    }
+
+    .post_aside {
+    	padding-top: 80px;
+    	padding-bottom: 80px;
+    }
+
+    .post_aside_tittle {
+    	font-size: 24px;
+    	margin: 0 auto 25px;
+    	width: 80%;
+    }
+
+    .post_aside_img {
+    	margin-bottom: 0;
+    }
+
+    .post_aside_text {
+    	font-size: 18px;
+    	line-height: 24px;
+    }
+
+    .box>.button {
+    	background: rgba(255, 255, 255, 0.3);
+    }
+
+    .box>.button::after {
+    	background-color: rgba(255, 255, 255, 0);
+    }
+
+    .footer {
+    	height: 120px;
+    }
+
+    .social_logo {
+    	height: 40px;
+    }
+
+    .social_logo_icon {
+    	width: 30px;
+    	height: 30px;
+    	padding: 5px;
+    }
+}
+
+@media (max-width: 640px) {
+	.welcome-title {
+    	font-size: 110px;
+    	line-height: 5px;
+    }
+
+	.menu-list {
+    	font-size: 14px;
+    	padding: 0;
+	}
+
+	.menu-list_item {
+		margin-right: 10px;
+	}
+
+	.button_reserve {
+		width: 50%;
+    	height: 45px;
+    	font-size: 14px;
+    }
+
+    .button_down {
+    	width: 35px;
+    }
+
+	.post_header_text {
+		font-size: 14px;
+    	line-height: 22px;
+    	padding-top: 80px;
+    	margin-bottom: 35px;
+    	width: 100%;
+	}
+
+	.post_header_img {
+		margin-bottom: 80px;
+	}
+
+	.post_main_section {
+		background: none;
+		padding-right: 25px;
+    	padding-left: 25px;
+    	height: 200px;
+    	margin-bottom: 0;
+	}
+
+	.post_main_section::after {
+		background-color: #ffffff;
+	}
+
+	.post_main_section_text {
+    	font-size: 14px;
+    	line-height: 18px;
+    	color: #000000;
+    	font-family: "Roboto Slab Light";
+    	width: 35%;
+    	padding-left: 10%;
+    }
+
+    .button {
+    	background: #000000 url(../images/menu_mob.jpg);
+    	background-repeat: no-repeat;
+  		background-position: center center;
+  		background-size: cover;
+  		position: relative;
+
+    	width: 150px;
+    	height: 150px;
+        font-size: 12px;
+    	top: 15%;
+    	left: 5%;
+    }
+
+    .button::after {
+    	content: "";
+  		background-color: #000000;
+  
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		bottom: 0;
+  		right: 0;
+  		border-radius: 250px;
+  		opacity: 0.5;
+  		
+    }
+
+    .shape_top {
+    	width: 15px;
+    	height: 2px;
+    	margin-top: 35%;
+    	z-index: 20;
+    	position: relative;
+    }
+
+    .button_name {
+    	font-size: 12px;
+    	margin-bottom: 0;
+    	margin-top: 0;
+    	z-index: 20;
+    	position: relative;
+    }
+
+    .shape_bottom {
+    	width: 15px;
+    	height: 2px;
+    	z-index: 20;
+    	position: relative;
+    }
+
+    .post_main_section:nth-child(2) {
+    	background: none;
+    }
+
+    .post_main_section:nth-child(2)>.post_main_section_text {
+    	padding: 0;
+    	margin-left: 10%;
+    }
+
+    .post_main_section:nth-child(2)>.button {
+    	background: #000000 url(../images/menu_bar_mob.jpg);
+    	background-repeat: no-repeat;
+  		background-position: center center;
+  		background-size: cover;
+  		position: relative;
+
+    	top: 15%;
+    	left: 5%;
+    }
+
+    .post_main_section:nth-child(3) {
+    	background: none;
+    }
+
+    .post_main_section:nth-child(3)>.button {
+    	background: #000000 url(../images/menu_hookah_mobile.jpg);
+    	background-repeat: no-repeat;
+  		background-position: center center;
+  		background-size: cover;
+  		position: relative;
+    }
+
+    .post_aside {
+    	padding-top: 80px;
+    	padding-bottom: 80px;
+    }
+
+    .post_aside_tittle {
+    	font-size: 14px;
+    	margin: 0 auto 25px;
+    	width: 80%;
+    }
+
+    .post_aside_img {
+    	margin-bottom: 0;
+    }
+
+    .post_aside_text {
+    	font-size: 12px;
+    	line-height: 18px;
+    	width: 80%;
+    }
+
+    .box {
+    	padding-top: 65px;
+    	flex-direction: column;
+    	padding-left: 35%;
+    }
+
+    .box>.button:nth-child(1) {
+    	margin-bottom: 65px;
+    }
+
+    .box>.button {
+    	background: rgba(255, 255, 255, 0.3);
+    }
+
+    .box>.button::after {
+    	background-color: rgba(255, 255, 255, 0);
+    }
+
+    .footer {
+    	height: 100px;
+    }
+
+    .footer>.holder {
+    	padding-top: 10%;
+    }
+
+    .social_logo {
+    	height: 40px;
+    }
+
+    .social_logo_icon {
+    	width: 30px;
+    	height: 30px;
+    	padding: 5px;
+    }
 }
