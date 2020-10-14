@@ -1,7 +1,7 @@
 body {
   display: block;
   margin: 0px;
-  }
+}
 
 @font-face {
     font-family: "Roboto Slab Regular"; 
@@ -610,6 +610,11 @@ body {
     	line-height: 5px;
     }
 
+    .container {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
 	.menu-list {
     	font-size: 14px;
     	padding: 0;
@@ -647,6 +652,8 @@ body {
     	padding-left: 25px;
     	height: 200px;
     	margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
 	}
 
 	.post_main_section::after {
@@ -659,7 +666,6 @@ body {
     	color: #000000;
     	font-family: "Roboto Slab Light";
     	width: 35%;
-    	padding-left: 10%;
     }
 
     .button {
@@ -754,6 +760,7 @@ body {
     	font-size: 14px;
     	margin: 0 auto 25px;
     	width: 80%;
+      line-height: 20px;
     }
 
     .post_aside_img {
@@ -769,15 +776,18 @@ body {
     .box {
     	padding-top: 65px;
     	flex-direction: column;
-    	padding-left: 35%;
     }
 
     .box>.button:nth-child(1) {
     	margin-bottom: 65px;
+      margin-left: auto;
+    margin-right: auto;
     }
 
     .box>.button {
     	background: rgba(255, 255, 255, 0.3);
+      margin-left: auto;
+    margin-right: auto;
     }
 
     .box>.button::after {
@@ -785,7 +795,9 @@ body {
     }
 
     .footer {
-    	height: 100px;
+      height: 100px;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     .footer>.holder {
