@@ -464,7 +464,6 @@ body {
 	.post_header_text {
 		font-size: 22px;
     	line-height: 32px;
-    	padding-top: 80px;
     	margin-bottom: 25px;
     	width: 100%;
 	}
@@ -650,6 +649,10 @@ body {
 
     .button_down {
     	width: 35px;
+    }
+
+    .post_header {
+      padding-top: 0;
     }
 
 	.post_header_text {
