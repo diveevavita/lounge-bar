@@ -1,6 +1,7 @@
 body {
   display: block;
   margin: 0px;
+  min-width: 320px;
 }
 
 @font-face {
@@ -23,9 +24,10 @@ body {
     src: url(../fonts/Ruda-Regular.ttf);
 }
 
-.body { 
-	width: 100vw;
+body { 
+	  width: 100vw;
   	height: 100%;
+    min-width: 320px;
 }
 
 .welcome {
@@ -49,6 +51,8 @@ body {
 
   	width: 100%;
   	z-index: 2;
+
+    padding-bottom: 215px;
 }
 
 .holder {
@@ -56,7 +60,6 @@ body {
   	margin-right: auto;
   	display: flex;
   	justify-content: space-between;
-  	margin-bottom: 125px;
 }
 
 .menu {
@@ -65,14 +68,14 @@ body {
 
 .menu-list {
   	font-size: 24px;
-  	line-height: 36px;
   	letter-spacing: 1px;
   	list-style: none;
   	font-family: "Ruda Regular";
   	font-weight: 400;
   	display: flex;
   	flex-wrap: wrap;
-  	margin-top: 5px;
+  	margin: 0;
+    padding: 15px 0;
 }
 
 .menu-list_item {
@@ -94,7 +97,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 24px;
-    line-height: 36px;
     color: #ffffff;
     font-family: "Ruda Regular";
     background: transparent;
@@ -105,14 +107,11 @@ body {
 .welcome-title {
 	text-transform: uppercase;
     font-size: 400px;
-    line-height: 75px;
     color: #ffffff;
     font-family: "Rokkitt Regular";
     font-weight: 400;
     margin: 0 auto;
-    padding-top: 125px;
     text-align: center;
-    height: 415px;
 }
 
 .button_down {
@@ -127,6 +126,7 @@ body {
 .post_header {
 	padding-right: 50px;
 	padding-left: 50px;
+  padding-top: 120px;
 }
 
 .post_header_text {
@@ -138,7 +138,6 @@ body {
     font-family: "Roboto Slab Light";
     margin-left: auto;
     margin-right: auto;
-    padding-top: 120px;
     text-align: center;
     width: 80%;
     margin-bottom: 85px;
@@ -205,7 +204,6 @@ body {
     height: 400px;
     text-transform: uppercase;
     font-size: 24px;
-    line-height: 40px;
     letter-spacing: 2px;
     color: #ffffff;
     font-family: "Roboto Slab Regular";
@@ -218,28 +216,35 @@ body {
     position: relative;
 }
 
-.shape_top {
-	margin-left: auto;
+.button_name::before {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 42%;
     margin-right: auto;
-	z-index: 8;
-	width: 60px;
-	height: 5px;
-	background-color: #ffffff;
-	margin-top: 145px;
 }
 
-.shape_bottom{
-	margin-left: auto;
+.button_name::after {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 42%;
     margin-right: auto;
-	z-index: 8;
-	width: 60px;
-	height: 5px;
-	background-color: #ffffff;
-} 
+}
 
 .button_name {
-	margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: auto;
+    margin-top: 184px;
+    display: flex;
+    flex-direction: column;
 }
 
 .post_main_section:nth-child(2) {
@@ -273,7 +278,6 @@ body {
 
 .post_aside_tittle {
 	font-size: 32px;
-    line-height: 40px;
     color: #000000;
     letter-spacing: 1px;
     font-weight: 500;
@@ -339,14 +343,14 @@ body {
 
 .footer {
 	background-color: #000000;
-	height: 165px;
 	padding-left: 50px;
 	padding-right: 50px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .footer>.holder {
 	margin: 0;
-	padding-top: 5%;
 }
 
 .footer>.holder>.menu>.menu-list {
@@ -404,15 +408,21 @@ body {
     	top: 20%;
     }
 
-    .shape_top {
-    	width: 40px;
-    	height: 4px;
-    	margin-top: 110px;
-    }
+  .button_name::before {
+    content: "";
+    width: 40px;
+    height: 4px;
+  }
 
-    .shape_bottom {
-    	width: 40px;
-    	height: 4px;
+  .button_name::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+  }
+
+    .button_name {
+      margin-bottom: auto;
+      margin-top: 135px;
     }
 
     .post_aside_tittle {
@@ -422,10 +432,6 @@ body {
 
     .post_aside_text {
     	font-size: 22px;
-    }
-
-    .footer {
-    	height: 140px;
     }
 }
 
@@ -506,25 +512,24 @@ body {
   		
     }
 
-    .shape_top {
-    	width: 30px;
-    	height: 3px;
-    	margin-top: 40%;
-    	z-index: 20;
-    	position: relative;
-    }
+  .button_name::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    margin-top: -15px;
+  }
+
+  .button_name::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    margin-top: 35px;
+  }
 
     .button_name {
     	font-size: 16px;
-    	margin-bottom: 0;
-    	margin-top: 0;
-    	z-index: 20;
-    	position: relative;
-    }
-
-    .shape_bottom {
-    	width: 30px;
-    	height: 3px;
+    	margin-bottom: auto;
+      margin-top: 89px;
     	z-index: 20;
     	position: relative;
     }
@@ -587,10 +592,6 @@ body {
 
     .box>.button::after {
     	background-color: rgba(255, 255, 255, 0);
-    }
-
-    .footer {
-    	height: 120px;
     }
 
     .social_logo {
@@ -696,18 +697,26 @@ body {
   		
     }
 
-    .shape_top {
-    	width: 15px;
-    	height: 2px;
-    	margin-top: 35%;
-    	z-index: 20;
-    	position: relative;
-    }
+  .button_name::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    margin-top: -15px;
+    margin-left: 45%;
+  }
+
+  .button_name::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    margin-top: 30px;
+    margin-left: 45%;
+  }
 
     .button_name {
     	font-size: 12px;
-    	margin-bottom: 0;
-    	margin-top: 0;
+    	margin-bottom: auto;
+    	margin-top: 67px;
     	z-index: 20;
     	position: relative;
     }
@@ -760,7 +769,6 @@ body {
     	font-size: 14px;
     	margin: 0 auto 25px;
     	width: 80%;
-      line-height: 20px;
     }
 
     .post_aside_img {
@@ -795,13 +803,8 @@ body {
     }
 
     .footer {
-      height: 100px;
       padding-left: 5%;
       padding-right: 5%;
-    }
-
-    .footer>.holder {
-    	padding-top: 10%;
     }
 
     .social_logo {
